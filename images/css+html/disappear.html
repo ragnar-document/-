@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>灭霸打响指咯无js</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			display: flex;
+			overflow: hidden;
+			justify-content: center;
+			align-items: center;
+			height: 80px;
+		}
+
+		.container{
+			width: 600px;
+			height: 500px;
+			position: relative;
+
+		}
+
+		.container img:nth-child(1){
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		.container:hover img:nth-child(1){
+			transition: all 4s;
+			transform:  translateX(50px);
+			opacity: 0;
+			filter: blur(10px);
+			transition-delay: 0.5s;
+		}
+		.container img:nth-child(2){
+		    width: 1200px;   
+		    height: 500px;
+		    transform: translateX(600px) scaleX(0);
+		    transform-origin: left;
+		}
+		.container:hover img:nth-child(2){
+		    transition: 8s;
+		    transform: translateX(-600px) scaleX(1);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="img.jpg">
+		<img src="noise.png">
+		
+	</div>
+</body>
+</html>
